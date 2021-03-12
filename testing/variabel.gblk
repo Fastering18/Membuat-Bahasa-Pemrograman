@@ -1,0 +1,13 @@
+lokal tolol = 50
+
+saat tolol > 10 maka
+    tulis(tolol)
+    lokal tolol = tolol - 1
+tutup
+
+fungsi menggokil(wee)
+    lokal wee = wee * 3
+    kembali wee
+tutup
+
+tulis(menggokil("ha "))
