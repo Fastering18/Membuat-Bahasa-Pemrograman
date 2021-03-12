@@ -1,0 +1,5 @@
+fungsi kasihKata(kata) -> "halo " + kata
+
+lokal menggokil = kasihKata("anjay")
+
+tulis(menggokil)
