@@ -10,7 +10,7 @@ Sebelum memulai, download terlebih dahulu dibawah ini
 - [Nuitka github](https://github.com/Nuitka/Nuitka) 
 - Atau bisa juga dengan `pip install nuitka`  
   
-<br>  
+<hr>  
 
 # DEFINISI  
 ## Tokenizer  
