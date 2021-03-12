@@ -1,0 +1,59 @@
+statements      : NEWLINE* statement (NEWLINE+ expr)* NEWLINE*
+
+statement       : KEYWORD:balik expr?
+                : KEYWORD:lanjutkan
+                : KEYWORD:berhenti
+                : expr
+
+expr            : lokalKonstruktor:VAR IDENTIFIER sama expr
+                : perbandingan-expr ((KEYWORD:dan|KEYWORD:atau) perbandingan-expr)*
+
+perbandingan-expr: bukan perbandingan-expr
+                 : arith-expr ((SAMA|KURANGDARI|LEBIHDARI|KURANGLEBIHDARI|SAMALEBIHDARI|) arith-expr)*  
+
+arith-expr      : term ((TAMBAH|KURANG) term)*
+
+term            : faktor ((KALI|BAGI|MODULUS) faktor)*
+
+faktor          : (PLUS|MINUS) faktor
+	            : pangkat
+
+pangkat         : panggil (pangkat faktor)*
+
+panggil         : atom (PKiri (expr (KOMA expr)*)? PKiri)?
+
+atom            : INT|FLOAT|STRING|IDENTIFIER
+                : PKiri expr PKanan
+                : daftar-expr
+                : if-expr
+                : for-expr
+                : while-expr
+                : buat-fungsi
+
+daftar-expr     : KKiri (expr (KOMA expr)*)? KKanan
+
+if-expr		    : KEYWORD:jika expr KEYWORD:maka
+		          (statement if-expr-kalau|if-expr-jikatidak?)
+                | (NEWLINE statements KEYWORD:tutup|if-expr-kalau|if-expr-jikatidak)
+            
+if-expr-kalau   : KEYWORD:jika expr KEYWORD:maka
+		          (statement if-expr-kalau|if-expr-jikatidak?)
+                | (NEWLINE statements KEYWORD:tutup|if-expr-kalau|if-expr-jikatidak)
+
+if-expr-jikatidak : KEYWORD:jikatidak
+                    statement
+                  | (NEWLINE statements KEYWORD:tutup)
+		           
+for-expr		: KEYWORD:untuk IDENTIFIER sama KEYWORD:ke expr
+		          (KEYWORD:step expr)? KEYWORD:maka
+                  statement
+                | (NEWLINE statements KEYWORD:tutup)
+
+while-expr		: KEYWORD:saat expr KEYWORD:maka expr
+                   statement
+                | (NEWLINE statements KEYWORD:tutup)
+
+buat-fungsi     : KEYWORD:fungsi IDENTIFIER?
+                  PKiri (IDENTIFIER (KOMA IDENTIFIER)*)? PKanan
+                  PANAH expr
+                | (NEWLINE statements KEYWORD:tutup)
