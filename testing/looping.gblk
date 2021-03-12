@@ -1,19 +1,13 @@
-fungsi ulang(kata, jumlah)
+tulis((fungsi ulang(kata, jumlah)
    lokal kalimat_yg_diulang = kata * jumlah
-   kembali (kalimat_yg_diulang + " telah diulang " + jumlah + " kali"
-tutup
+   kembali (kalimat_yg_diulang + " telah diulang " + jumlah + " kali")
+tutup)("ha ", 4))
 
-untuk indeks = 1 ke 6 maka
-    lokal kata = ulang("ha ", indeks)
-    lokal indeks = indeks + 1
-    tunggu()
-tutup
+lokal acuan = 30
 
-lokal acuan = -30
-
-saat acuan < 10 maka
-   jika acuan <= -10 maka lanjutkan tutup
-   lokal acuan = acuan + 1
+saat acuan > 0 maka
+   jika acuan <= 5 maka lanjutkan tutup
+   lokal acuan = acuan - 1
    tunggu(0.5)
    tulis("acuan: " + acuan)
 tutup
