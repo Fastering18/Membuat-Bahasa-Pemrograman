@@ -4,12 +4,12 @@ Buat kreasi bahasa pemrograman sendiri dengan python!
 Sebelum memulai, download terlebih dahulu dibawah ini
 
 - **Download Python versi 3.x**    
-- [python.org](https://www.python.org/downloads/)
-
+- [python.org](https://www.python.org/downloads/)  
+  
 - **Download Nuitka 0.6.x** (untuk generate build file dari python)  
 - [Nuitka github](https://github.com/Nuitka/Nuitka) 
 - Atau bisa juga dengan `pip install nuitka`  
-
+<br>
 # DEFINISI  
 ## Tokenizer  
 Tokenisasi adalah proses mengganti data dengan simbol identifikasi unik yang menyimpan semua informasi penting tentang data tanpa mengorbankan keamanannya.    
