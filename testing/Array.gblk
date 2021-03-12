@@ -1,12 +1,15 @@
-fungsi iterasi(array)
-   untuk i = 0 ke 4 maka
-      lokal elemen_array = array / i
-      tulis(elemen_array + " adalah indeks ke " + i)
-   tutup
+tulis((fungsi ulang(kata, jumlah)
+   lokal kalimat_yg_diulang = kata * jumlah
+   kembali (kalimat_yg_diulang + " telah diulang " + jumlah + " kali")
+tutup)("ha ", 4))
+
+lokal acuan = 30
+
+saat acuan > 0 maka
+   jika acuan <= 5 maka lanjutkan tutup
+   lokal acuan = acuan - 1
+   tunggu(0.5)
+   tulis("acuan: " + acuan)
 tutup
 
-lokal array = ["halo ", "dunia ", "yang ", "indah"];
-iterasi(array);
-
-array + " eaak"
-tulis(array)
+tulis("selesai!")
