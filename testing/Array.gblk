@@ -1,0 +1,9 @@
+lokal array = ["halo ", "dunia ", "yang ", "indah"]
+
+untuk i = 0 ke 3 maka
+   elemen_array = array / i
+   tulis(elemen_array + " adalah indeks ke " + i)
+tutup
+
+array + " eaak"
+tulis(array)
