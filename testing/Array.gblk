@@ -1,9 +1,12 @@
-lokal array = ["halo ", "dunia ", "yang ", "indah"]
-
-untuk i = 0 ke 3 maka
-   elemen_array = array / i
-   tulis(elemen_array + " adalah indeks ke " + i)
+fungsi iterasi(array)
+   untuk i = 0 ke 4 maka
+      lokal elemen_array = array / i
+      tulis(elemen_array + " adalah indeks ke " + i)
+   tutup
 tutup
+
+lokal array = ["halo ", "dunia ", "yang ", "indah"];
+iterasi(array);
 
 array + " eaak"
 tulis(array)
