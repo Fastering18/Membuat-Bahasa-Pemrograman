@@ -3,10 +3,10 @@ Buat kreasi bahasa pemrograman sendiri dengan python!
 
 Sebelum memulai, download terlebih dahulu dibawah ini
 
-- **Download Python versi 3.x**    
+**Download Python versi 3.x**    
 - [python.org](https://www.python.org/downloads/)  
   
-- **Download Nuitka 0.6.x** (untuk generate build file dari python)  
+**Download Nuitka 0.6.x** (untuk generate build file dari python)  
 - [Nuitka github](https://github.com/Nuitka/Nuitka) 
 - Atau bisa juga dengan `pip install nuitka`  
   
