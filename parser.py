@@ -1,10 +1,13 @@
 import Utama as interpreter
 from datetime import date
+import sys
 
 tanggal = date.today().strftime("%B %d, %Y")
+
 print(
 f"""
-Gblk 0.0.6 ({tanggal})
+Gblk 0.0.6 (https://github.com/Fastering18/Membuat-Bahasa-Pemrograman, {tanggal}) di {sys.platform}
+cobalah dengan, tulis("hello world")
 """
 )
 
