@@ -1,4 +1,5 @@
 from util.panaherror import *
+from pathlib import Path
 import string, time
 
 # Utama
@@ -200,7 +201,8 @@ class Lexer:
 				tokens.append(Token(TokenTambah, posisi_awal=self.posisi))
 				self.maju()
 			elif self.karakterSkrg == "-":
-				tokens.append(self.buat_minus_atau_panah())
+				tokenMungkin = self.buat_minus_atau_panah_atau_komentar()
+				if isinstance(tokenMungkin, Token): tokens.append(tokenMungkin)
 			elif self.karakterSkrg == "*":
 				tokens.append(Token(TokenKali, posisi_awal=self.posisi))
 				self.maju()
@@ -313,7 +315,7 @@ class Lexer:
 		)
 		return Token(tipe_token, identitas_string, posisi_awal, self.posisi)
 
-	def buat_minus_atau_panah(self):
+	def buat_minus_atau_panah_atau_komentar(self):
 		tipe_token = TokenKurang
 		posisi_awal = self.posisi.salin()
 		self.maju()
@@ -321,6 +323,9 @@ class Lexer:
 		if self.karakterSkrg == ">":
 			self.maju()
 			tipe_token = TokenPanah
+		elif self.karakterSkrg == "-":
+			self.skip_komentar()
+			return
 
 		return Token(tipe_token, posisi_awal=posisi_awal, posisi_akhir=self.posisi)
 
@@ -375,6 +380,27 @@ class Lexer:
 
 		return Token(tipe_token, posisi_awal=posisi_awal, posisi_akhir=self.posisi)
 
+	def skip_komentar(self):
+		komen_blok = False
+		posisi_awal = self.posisi.salin()
+		self.maju()
+
+		if self.karakterSkrg == "[":
+			komen_blok = True
+			self.maju()
+			if self.karakterSkrg == "[":
+				while self.karakterSkrg != ']' and self.karakterSkrg != None:
+					self.maju()
+				self.maju()
+				if self.karakterSkrg != "]":
+					return None, KarakterYangDibutuhkan(
+						posisi_awal, self.posisi, "Dibutuhkan ']'"
+					)
+		else:
+			while self.karakterSkrg != '\n' and self.karakterSkrg != None:
+				self.maju()
+
+		self.maju()
 
 # NODES
 
@@ -772,14 +798,14 @@ class Parser:
 			cases.extend(new_cases)
 
 			if self.tokenSkrg.tipe == TokenLineBaru:
-			    res.daftar_kemajuan()
-			    self.maju()
+				res.daftar_kemajuan()
+				self.maju()
 
 			if not self.tokenSkrg.sama_dengan(TokenKeyword, 'tutup'):
-			    return res.gagal(SintaksSalah(
-				    self.tokenSkrg.posisi_awal, self.tokenSkrg.posisi_akhir,
-				    f"Dibutuhkan 'tutup'"
-			    ))
+				return res.gagal(SintaksSalah(
+					self.tokenSkrg.posisi_awal, self.tokenSkrg.posisi_akhir,
+					f"Dibutuhkan 'tutup'"
+				))
 
 			res.daftar_kemajuan()
 			self.maju()
@@ -1520,8 +1546,8 @@ class Isi:
 	def atau_oleh(self, lain):
 		return None, self.operasi_illegal(lain)
 
-	def bukan(self):
-		return None, self.operasi_illegal()
+	def bukan(self, lain):
+		return None, self.operasi_illegal(lain)
 
 	def apakah_benar(self):
 		return False
@@ -1867,7 +1893,7 @@ class BuiltInFungsi(BaseFungsi):
 		super().__init__(nama)
 
 	def esekusi(self, params):
-		res = HasilRuntime()
+		res = HasilRuntime() 
 		konteks_esekusi = self.buat_konteks_baru()
 
 		nama_metode = f"esekusi_{self.nama}"
@@ -1912,8 +1938,80 @@ class BuiltInFungsi(BaseFungsi):
 		# lokal e = 0; saat e < 50 maka tulis(e + 1); tunggu(1); lokal e = e + 1 tutup
 	esekusi_tunggu.nama_parameter = ["waitsecond"]
 
+	def esekusi_tipe(self, konteks_esekusi):
+		return HasilRuntime().berhasil(String(type(konteks_esekusi.TabelSimbol.dapat("data") or Nil()).__name__.lower()))
+	esekusi_tipe.nama_parameter = ["data"]
+
+	def esekusi_panjang(self, konteks_esekusi):
+		dataparam = konteks_esekusi.TabelSimbol.dapat("strlistdata") or Nil()
+		if isinstance(dataparam, (Daftar, String)):
+			return HasilRuntime().berhasil(Angka(len(dataparam.isi if isinstance(dataparam, Daftar) else dataparam.nilai)))
+		else:
+			return HasilRuntime().berhasil(Angka(0))
+	esekusi_panjang.nama_parameter = ["strlistdata"]
+
+	def esekusi_masukkan(self, konteks_esekusi):
+		list_ = konteks_esekusi.TabelSimbol.dapat("list")
+		value = konteks_esekusi.TabelSimbol.dapat("value")
+
+		if not isinstance(list_, Daftar):
+			return HasilRuntime().gagal(RTError(
+				self.posisi_awal, self.posisi_akhir,
+				"Parameter pertama harus berupa Array",
+			 	konteks_esekusi
+	  		))
+		
+		if isinstance(value, Nil):
+			return HasilRuntime().gagal(RTError(
+				self.posisi_awal, self.posisi_akhir,
+				"Parameter kedua tidak boleh nil",
+			 	konteks_esekusi
+	  		))
+
+		list_.isi.append(value)
+		return HasilRuntime().berhasil(Angka(len(list_.isi) - 1))
+	esekusi_masukkan.nama_parameter = ["list", "value"]
+
+	def esekusi_jalankan(self, konteks_esekusi):
+		namaFile = konteks_esekusi.TabelSimbol.dapat("nama_file")
+
+		if not isinstance(namaFile, String):
+			return HasilRuntime().gagal(RTError(
+				self.posisi_awal, self.posisi_akhir,
+				"Parameter pertama harus berupa String",
+			 	konteks_esekusi
+	  		))
+
+		namaFile = namaFile.nilai
+		file_target = Path(namaFile)
+
+		if not file_target.is_file():
+			return HasilRuntime().gagal(RTError(
+				self.posisi_awal, self.posisi_akhir,
+				f"File {namaFile} tidak ditemukan",
+			 	konteks_esekusi
+	  		))
+		
+		script = file_target.read_text()
+		hasil, error = esekusi(namaFile, script)
+	
+		if error:
+			return HasilRuntime().gagal(RTError(
+				self.posisi_awal, self.posisi_akhir,
+				f"Gagal mengesekusi script, \"{namaFile}\"\n" +
+				error.jadiString(),
+				konteks_esekusi
+	  		))
+
+		return HasilRuntime().berhasil(Angka.nil)
+	esekusi_jalankan.nama_parameter = ["nama_file"]
+
 BuiltInFungsi.tulis = BuiltInFungsi("print")
 BuiltInFungsi.wait = BuiltInFungsi("tunggu")
+BuiltInFungsi.tipe = BuiltInFungsi("tipe")
+BuiltInFungsi.panjang = BuiltInFungsi("panjang")
+BuiltInFungsi.masuk = BuiltInFungsi("masukkan")
+BuiltInFungsi.esekusi_builtin = BuiltInFungsi("jalankan")
 
 # Konteks
 class Konteks:
@@ -2002,7 +2100,7 @@ class Interpreter:
 		for element_node in node.isi_daftar:
 			isian.append(res.daftar(self.kunjungi(element_node, konteks)))
 			if res.harus_return():
-			    return res
+				return res
 
 
 		return res.berhasil(
@@ -2080,7 +2178,7 @@ class Interpreter:
 
 	def kunjungi_NodeIF(self, node, konteks):
 		res = HasilRuntime()
-    
+	
 		for kondisi, expr, harus_return_null in node.cases:
 			kondisi_value = res.daftar(self.kunjungi(kondisi, konteks))
 			if res.harus_return():
@@ -2216,7 +2314,7 @@ class Interpreter:
 			if res.harus_return(): return res
 		else:
 			value = Angka.nil
-	    
+		
 		#print("ketemu return ", value)
 		return res.berhasil_return(value)
 
@@ -2237,7 +2335,10 @@ global_tabel_simbol.tulis("salah", Angka.salah)  # false
 global_tabel_simbol.tulis("benar", Angka.benar)  # true
 global_tabel_simbol.tulis("tulis", BuiltInFungsi.tulis)
 global_tabel_simbol.tulis("tunggu", BuiltInFungsi.wait)
-
+global_tabel_simbol.tulis("tipe", BuiltInFungsi.tipe)
+global_tabel_simbol.tulis("panjang", BuiltInFungsi.panjang)
+global_tabel_simbol.tulis("masuk", BuiltInFungsi.masuk)
+global_tabel_simbol.tulis("esekusi", BuiltInFungsi.esekusi_builtin)
 
 def esekusi(namafile, teks):
 	lexer = Lexer(namafile, teks)
