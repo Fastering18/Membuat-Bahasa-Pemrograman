@@ -1,0 +1,32 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "GBLK",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.gblk",
+				"match": "\\b(lokal|jika|jikatidak|kalau|saat|untuk|ke|langkah|kembali|maka|tutup)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.gblk",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.gblk",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.gblk"
+}
