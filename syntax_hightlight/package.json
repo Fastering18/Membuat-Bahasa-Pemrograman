@@ -1,0 +1,26 @@
+{
+    "name": "gblk-lang",
+    "displayName": "GBLK Language",
+    "description": "Syntax highlighting for gblk language",
+    "version": "0.0.125",
+    "engines": {
+        "vscode": "^1.54.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "publisher": "Fastering18",
+    "contributes": {
+        "languages": [{
+            "id": "gblk",
+            "aliases": ["GBLK", "gblk"],
+            "extensions": [".gblk"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "gblk",
+            "scopeName": "source.gblk",
+            "path": "./syntaxes/gblk.tmLanguage.json"
+        }]
+    }
+}
