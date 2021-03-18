@@ -1,0 +1,528 @@
+[2021-03-18T17:06:43.379091 42644] === CCACHE 3.7.12 STARTED =========================================
+[2021-03-18T17:06:43.379091 42644] Config: (default) base_dir = 
+[2021-03-18T17:06:43.379091 42644] Config: (environment) cache_dir = C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2021-03-18T17:06:43.379091 42644] Config: (default) cache_dir_levels = 2
+[2021-03-18T17:06:43.379091 42644] Config: (default) compiler = 
+[2021-03-18T17:06:43.379091 42644] Config: (default) compiler_check = mtime
+[2021-03-18T17:06:43.379091 42644] Config: (default) compression = false
+[2021-03-18T17:06:43.379091 42644] Config: (default) compression_level = 6
+[2021-03-18T17:06:43.379091 42644] Config: (default) cpp_extension = 
+[2021-03-18T17:06:43.379091 42644] Config: (default) debug = false
+[2021-03-18T17:06:43.379091 42644] Config: (default) depend_mode = false
+[2021-03-18T17:06:43.379091 42644] Config: (default) direct_mode = true
+[2021-03-18T17:06:43.379091 42644] Config: (default) disable = false
+[2021-03-18T17:06:43.379091 42644] Config: (default) extra_files_to_hash = 
+[2021-03-18T17:06:43.379091 42644] Config: (default) hard_link = false
+[2021-03-18T17:06:43.379091 42644] Config: (default) hash_dir = true
+[2021-03-18T17:06:43.379091 42644] Config: (default) ignore_headers_in_manifest = 
+[2021-03-18T17:06:43.379091 42644] Config: (default) keep_comments_cpp = false
+[2021-03-18T17:06:43.379091 42644] Config: (default) limit_multiple = 0.8
+[2021-03-18T17:06:43.379091 42644] Config: (environment) log_file = D:\Projek\Node-Compiler\Python-Javanese\gblk.build\ccache-36680.txt
+[2021-03-18T17:06:43.379091 42644] Config: (default) max_files = 0
+[2021-03-18T17:06:43.379091 42644] Config: (C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/ccache.conf) max_size = 5.0G
+[2021-03-18T17:06:43.379091 42644] Config: (default) path = 
+[2021-03-18T17:06:43.379091 42644] Config: (default) pch_external_checksum = false
+[2021-03-18T17:06:43.379091 42644] Config: (default) prefix_command = 
+[2021-03-18T17:06:43.379091 42644] Config: (default) prefix_command_cpp = 
+[2021-03-18T17:06:43.379091 42644] Config: (default) read_only = false
+[2021-03-18T17:06:43.379091 42644] Config: (default) read_only_direct = false
+[2021-03-18T17:06:43.379091 42644] Config: (default) recache = false
+[2021-03-18T17:06:43.379091 42644] Config: (default) run_second_cpp = true
+[2021-03-18T17:06:43.379091 42644] Config: (default) sloppiness = 
+[2021-03-18T17:06:43.379091 42644] Config: (default) stats = true
+[2021-03-18T17:06:43.379091 42644] Config: (default) temporary_dir = 
+[2021-03-18T17:06:43.379091 42644] Config: (default) umask = 
+[2021-03-18T17:06:43.380088 42644] Command line: C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\ccache\v3.7.12\ccache.exe C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\gcc\x86_64\10.2.0-11.0.0-8.0.0-r5\mingw64\bin\gcc.exe -o __constants.o -c -std=c11 -fvisibility=hidden -fwrapv -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -fcompare-debug-second -O3 -pipe -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=0 -D_NUITKA_EXE -IC:\users\brahmana\appdata\local\programs\python\python39\include -I. -IC:\users\brahmana\appdata\local\programs\python\python39\lib\SITE-P~1\nuitka\build\include -IC:\users\brahmana\appdata\local\programs\python\python39\lib\SITE-P~1\nuitka\build\static_src __constants.c
+[2021-03-18T17:06:43.381087 42644] Hostname: DESKTOP-4AGRVN6
+[2021-03-18T17:06:43.381087 42644] Working directory: D:\Projek\Node-Compiler\Python-Javanese\gblk.build
+[2021-03-18T17:06:43.381087 42644] Source file: __constants.c
+[2021-03-18T17:06:43.381087 42644] Object file: __constants.o
+[2021-03-18T17:06:43.381087 42644] Trying direct lookup
+[2021-03-18T17:06:43.381087 42644] Looking for object file hash in C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/3/8/b483410362021a8ac5d8051d07b661-4779.manifest
+[2021-03-18T17:06:43.432948 9804 ] === CCACHE 3.7.12 STARTED =========================================
+[2021-03-18T17:06:43.432948 9804 ] Config: (default) base_dir = 
+[2021-03-18T17:06:43.432948 9804 ] Config: (environment) cache_dir = C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2021-03-18T17:06:43.432948 9804 ] Config: (default) cache_dir_levels = 2
+[2021-03-18T17:06:43.432948 9804 ] Config: (default) compiler = 
+[2021-03-18T17:06:43.432948 9804 ] Config: (default) compiler_check = mtime
+[2021-03-18T17:06:43.432948 9804 ] Config: (default) compression = false
+[2021-03-18T17:06:43.432948 9804 ] Config: (default) compression_level = 6
+[2021-03-18T17:06:43.432948 9804 ] Config: (default) cpp_extension = 
+[2021-03-18T17:06:43.432948 9804 ] Config: (default) debug = false
+[2021-03-18T17:06:43.432948 9804 ] Config: (default) depend_mode = false
+[2021-03-18T17:06:43.432948 9804 ] Config: (default) direct_mode = true
+[2021-03-18T17:06:43.432948 9804 ] Config: (default) disable = false
+[2021-03-18T17:06:43.432948 9804 ] Config: (default) extra_files_to_hash = 
+[2021-03-18T17:06:43.432948 9804 ] Config: (default) hard_link = false
+[2021-03-18T17:06:43.432948 9804 ] Config: (default) hash_dir = true
+[2021-03-18T17:06:43.432948 9804 ] Config: (default) ignore_headers_in_manifest = 
+[2021-03-18T17:06:43.432948 9804 ] Config: (default) keep_comments_cpp = false
+[2021-03-18T17:06:43.432948 9804 ] Config: (default) limit_multiple = 0.8
+[2021-03-18T17:06:43.432948 9804 ] Config: (environment) log_file = D:\Projek\Node-Compiler\Python-Javanese\gblk.build\ccache-36680.txt
+[2021-03-18T17:06:43.432948 9804 ] Config: (default) max_files = 0
+[2021-03-18T17:06:43.432948 9804 ] Config: (C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/ccache.conf) max_size = 5.0G
+[2021-03-18T17:06:43.432948 9804 ] Config: (default) path = 
+[2021-03-18T17:06:43.432948 9804 ] Config: (default) pch_external_checksum = false
+[2021-03-18T17:06:43.432948 9804 ] Config: (default) prefix_command = 
+[2021-03-18T17:06:43.432948 9804 ] Config: (default) prefix_command_cpp = 
+[2021-03-18T17:06:43.432948 9804 ] Config: (default) read_only = false
+[2021-03-18T17:06:43.432948 9804 ] Config: (default) read_only_direct = false
+[2021-03-18T17:06:43.432948 9804 ] Config: (default) recache = false
+[2021-03-18T17:06:43.432948 9804 ] Config: (default) run_second_cpp = true
+[2021-03-18T17:06:43.432948 9804 ] Config: (default) sloppiness = 
+[2021-03-18T17:06:43.432948 9804 ] Config: (default) stats = true
+[2021-03-18T17:06:43.432948 9804 ] Config: (default) temporary_dir = 
+[2021-03-18T17:06:43.432948 9804 ] Config: (default) umask = 
+[2021-03-18T17:06:43.432948 9804 ] Command line: C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\ccache\v3.7.12\ccache.exe C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\gcc\x86_64\10.2.0-11.0.0-8.0.0-r5\mingw64\bin\gcc.exe -o __helpers.o -c -std=c11 -fvisibility=hidden -fwrapv -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -fcompare-debug-second -O3 -pipe -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=0 -D_NUITKA_EXE -IC:\users\brahmana\appdata\local\programs\python\python39\include -I. -IC:\users\brahmana\appdata\local\programs\python\python39\lib\SITE-P~1\nuitka\build\include -IC:\users\brahmana\appdata\local\programs\python\python39\lib\SITE-P~1\nuitka\build\static_src __helpers.c
+[2021-03-18T17:06:43.432948 9804 ] Hostname: DESKTOP-4AGRVN6
+[2021-03-18T17:06:43.432948 9804 ] Working directory: D:\Projek\Node-Compiler\Python-Javanese\gblk.build
+[2021-03-18T17:06:43.433945 9804 ] Source file: __helpers.c
+[2021-03-18T17:06:43.433945 9804 ] Object file: __helpers.o
+[2021-03-18T17:06:43.433945 9804 ] Trying direct lookup
+[2021-03-18T17:06:43.433945 9804 ] Looking for object file hash in C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/5/e/dec57b723b112591ef2f9ca427ddfd-61952.manifest
+[2021-03-18T17:06:43.449902 42644] Got object file hash from manifest
+[2021-03-18T17:06:43.450899 42644] Copying C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/9/e/6b31e6aaec5203c024b74789b6be06-630367.o to __constants.o (uncompressed)
+[2021-03-18T17:06:43.450899 42644] Created from cache: C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/9/e/6b31e6aaec5203c024b74789b6be06-630367.o -> __constants.o
+[2021-03-18T17:06:43.450899 42644] Succeeded getting cached result
+[2021-03-18T17:06:43.450899 42644] Result: cache hit (direct)
+[2021-03-18T17:06:43.450899 42644] Acquired lock C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/9/stats.lock
+[2021-03-18T17:06:43.451897 42644] Releasing lock C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/9/stats.lock
+[2021-03-18T17:06:43.465860 31784] === CCACHE 3.7.12 STARTED =========================================
+[2021-03-18T17:06:43.465860 31784] Config: (default) base_dir = 
+[2021-03-18T17:06:43.465860 31784] Config: (environment) cache_dir = C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2021-03-18T17:06:43.465860 31784] Config: (default) cache_dir_levels = 2
+[2021-03-18T17:06:43.465860 31784] Config: (default) compiler = 
+[2021-03-18T17:06:43.465860 31784] Config: (default) compiler_check = mtime
+[2021-03-18T17:06:43.465860 31784] Config: (default) compression = false
+[2021-03-18T17:06:43.465860 31784] Config: (default) compression_level = 6
+[2021-03-18T17:06:43.465860 31784] Config: (default) cpp_extension = 
+[2021-03-18T17:06:43.465860 31784] Config: (default) debug = false
+[2021-03-18T17:06:43.465860 31784] Config: (default) depend_mode = false
+[2021-03-18T17:06:43.465860 31784] Config: (default) direct_mode = true
+[2021-03-18T17:06:43.465860 31784] Config: (default) disable = false
+[2021-03-18T17:06:43.465860 31784] Config: (default) extra_files_to_hash = 
+[2021-03-18T17:06:43.465860 31784] Config: (default) hard_link = false
+[2021-03-18T17:06:43.465860 31784] Config: (default) hash_dir = true
+[2021-03-18T17:06:43.465860 31784] Config: (default) ignore_headers_in_manifest = 
+[2021-03-18T17:06:43.465860 31784] Config: (default) keep_comments_cpp = false
+[2021-03-18T17:06:43.465860 31784] Config: (default) limit_multiple = 0.8
+[2021-03-18T17:06:43.465860 31784] Config: (environment) log_file = D:\Projek\Node-Compiler\Python-Javanese\gblk.build\ccache-36680.txt
+[2021-03-18T17:06:43.465860 31784] Config: (default) max_files = 0
+[2021-03-18T17:06:43.465860 31784] Config: (C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/ccache.conf) max_size = 5.0G
+[2021-03-18T17:06:43.465860 31784] Config: (default) path = 
+[2021-03-18T17:06:43.465860 31784] Config: (default) pch_external_checksum = false
+[2021-03-18T17:06:43.465860 31784] Config: (default) prefix_command = 
+[2021-03-18T17:06:43.465860 31784] Config: (default) prefix_command_cpp = 
+[2021-03-18T17:06:43.465860 31784] Config: (default) read_only = false
+[2021-03-18T17:06:43.465860 31784] Config: (default) read_only_direct = false
+[2021-03-18T17:06:43.465860 31784] Config: (default) recache = false
+[2021-03-18T17:06:43.465860 31784] Config: (default) run_second_cpp = true
+[2021-03-18T17:06:43.465860 31784] Config: (default) sloppiness = 
+[2021-03-18T17:06:43.465860 31784] Config: (default) stats = true
+[2021-03-18T17:06:43.465860 31784] Config: (default) temporary_dir = 
+[2021-03-18T17:06:43.465860 31784] Config: (default) umask = 
+[2021-03-18T17:06:43.466856 31784] Command line: C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\ccache\v3.7.12\ccache.exe C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\gcc\x86_64\10.2.0-11.0.0-8.0.0-r5\mingw64\bin\gcc.exe -o module.__main__.o -c -std=c11 -fvisibility=hidden -fwrapv -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -fcompare-debug-second -O3 -pipe -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=0 -D_NUITKA_EXE -IC:\users\brahmana\appdata\local\programs\python\python39\include -I. -IC:\users\brahmana\appdata\local\programs\python\python39\lib\SITE-P~1\nuitka\build\include -IC:\users\brahmana\appdata\local\programs\python\python39\lib\SITE-P~1\nuitka\build\static_src module.__main__.c
+[2021-03-18T17:06:43.466856 31784] Hostname: DESKTOP-4AGRVN6
+[2021-03-18T17:06:43.466856 31784] Working directory: D:\Projek\Node-Compiler\Python-Javanese\gblk.build
+[2021-03-18T17:06:43.466856 31784] Source file: module.__main__.c
+[2021-03-18T17:06:43.466856 31784] Object file: module.__main__.o
+[2021-03-18T17:06:43.467854 31784] Trying direct lookup
+[2021-03-18T17:06:43.467854 31784] Looking for object file hash in C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/d/3/07440abd4f92cd65da4732addd86eb-65596.manifest
+[2021-03-18T17:06:43.474836 41896] === CCACHE 3.7.12 STARTED =========================================
+[2021-03-18T17:06:43.474836 41896] Config: (default) base_dir = 
+[2021-03-18T17:06:43.474836 41896] Config: (environment) cache_dir = C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2021-03-18T17:06:43.474836 41896] Config: (default) cache_dir_levels = 2
+[2021-03-18T17:06:43.474836 41896] Config: (default) compiler = 
+[2021-03-18T17:06:43.474836 41896] Config: (default) compiler_check = mtime
+[2021-03-18T17:06:43.474836 41896] Config: (default) compression = false
+[2021-03-18T17:06:43.474836 41896] Config: (default) compression_level = 6
+[2021-03-18T17:06:43.474836 41896] Config: (default) cpp_extension = 
+[2021-03-18T17:06:43.474836 41896] Config: (default) debug = false
+[2021-03-18T17:06:43.474836 41896] Config: (default) depend_mode = false
+[2021-03-18T17:06:43.474836 41896] Config: (default) direct_mode = true
+[2021-03-18T17:06:43.474836 41896] Config: (default) disable = false
+[2021-03-18T17:06:43.474836 41896] Config: (default) extra_files_to_hash = 
+[2021-03-18T17:06:43.474836 41896] Config: (default) hard_link = false
+[2021-03-18T17:06:43.474836 41896] Config: (default) hash_dir = true
+[2021-03-18T17:06:43.474836 41896] Config: (default) ignore_headers_in_manifest = 
+[2021-03-18T17:06:43.474836 41896] Config: (default) keep_comments_cpp = false
+[2021-03-18T17:06:43.474836 41896] Config: (default) limit_multiple = 0.8
+[2021-03-18T17:06:43.474836 41896] Config: (environment) log_file = D:\Projek\Node-Compiler\Python-Javanese\gblk.build\ccache-36680.txt
+[2021-03-18T17:06:43.474836 41896] Config: (default) max_files = 0
+[2021-03-18T17:06:43.474836 41896] Config: (C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/ccache.conf) max_size = 5.0G
+[2021-03-18T17:06:43.474836 41896] Config: (default) path = 
+[2021-03-18T17:06:43.474836 41896] Config: (default) pch_external_checksum = false
+[2021-03-18T17:06:43.474836 41896] Config: (default) prefix_command = 
+[2021-03-18T17:06:43.474836 41896] Config: (default) prefix_command_cpp = 
+[2021-03-18T17:06:43.474836 41896] Config: (default) read_only = false
+[2021-03-18T17:06:43.474836 41896] Config: (default) read_only_direct = false
+[2021-03-18T17:06:43.474836 41896] Config: (default) recache = false
+[2021-03-18T17:06:43.474836 41896] Config: (default) run_second_cpp = true
+[2021-03-18T17:06:43.474836 41896] Config: (default) sloppiness = 
+[2021-03-18T17:06:43.474836 41896] Config: (default) stats = true
+[2021-03-18T17:06:43.474836 41896] Config: (default) temporary_dir = 
+[2021-03-18T17:06:43.474836 41896] Config: (default) umask = 
+[2021-03-18T17:06:43.474836 41896] Command line: C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\ccache\v3.7.12\ccache.exe C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\gcc\x86_64\10.2.0-11.0.0-8.0.0-r5\mingw64\bin\gcc.exe -o __loader.o -c -std=c11 -fvisibility=hidden -fwrapv -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -fcompare-debug-second -O3 -pipe -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=0 -D_NUITKA_EXE -IC:\users\brahmana\appdata\local\programs\python\python39\include -I. -IC:\users\brahmana\appdata\local\programs\python\python39\lib\SITE-P~1\nuitka\build\include -IC:\users\brahmana\appdata\local\programs\python\python39\lib\SITE-P~1\nuitka\build\static_src __loader.c
+[2021-03-18T17:06:43.474836 41896] Hostname: DESKTOP-4AGRVN6
+[2021-03-18T17:06:43.474836 41896] Working directory: D:\Projek\Node-Compiler\Python-Javanese\gblk.build
+[2021-03-18T17:06:43.474836 41896] Source file: __loader.c
+[2021-03-18T17:06:43.474836 41896] Object file: __loader.o
+[2021-03-18T17:06:43.475833 41896] Trying direct lookup
+[2021-03-18T17:06:43.475833 41896] Looking for object file hash in C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/6/e/475a5023c80d2406935a0f04ef8cd8-3042.manifest
+[2021-03-18T17:06:43.510739 9804 ] Got object file hash from manifest
+[2021-03-18T17:06:43.511737 9804 ] Copying C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/7/6/07a8e7711d97436b35400e70d6ee83-667106.o to __helpers.o (uncompressed)
+[2021-03-18T17:06:43.511737 9804 ] Created from cache: C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/7/6/07a8e7711d97436b35400e70d6ee83-667106.o -> __helpers.o
+[2021-03-18T17:06:43.511737 9804 ] Succeeded getting cached result
+[2021-03-18T17:06:43.511737 9804 ] Result: cache hit (direct)
+[2021-03-18T17:06:43.511737 9804 ] Acquired lock C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/7/stats.lock
+[2021-03-18T17:06:43.512734 9804 ] Releasing lock C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/7/stats.lock
+[2021-03-18T17:06:43.577560 31784] Got object file hash from manifest
+[2021-03-18T17:06:43.577560 31784] Copying C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/8/e/0b9289b80d8691001a2ea5ce1a4353-683437.o to module.__main__.o (uncompressed)
+[2021-03-18T17:06:43.577560 31784] Created from cache: C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/8/e/0b9289b80d8691001a2ea5ce1a4353-683437.o -> module.__main__.o
+[2021-03-18T17:06:43.578558 31784] Succeeded getting cached result
+[2021-03-18T17:06:43.578558 31784] Result: cache hit (direct)
+[2021-03-18T17:06:43.578558 31784] Acquired lock C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/8/stats.lock
+[2021-03-18T17:06:43.578558 31784] Releasing lock C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/8/stats.lock
+[2021-03-18T17:06:43.579555 41896] Got object file hash from manifest
+[2021-03-18T17:06:43.580553 41896] Copying C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/b/7/bdf78b391296f2fe59f57d34c1fce4-442316.o to __loader.o (uncompressed)
+[2021-03-18T17:06:43.659342 41896] Created from cache: C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/b/7/bdf78b391296f2fe59f57d34c1fce4-442316.o -> __loader.o
+[2021-03-18T17:06:43.661336 41896] Succeeded getting cached result
+[2021-03-18T17:06:43.661336 41896] Result: cache hit (direct)
+[2021-03-18T17:06:43.661336 41896] Acquired lock C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/b/stats.lock
+[2021-03-18T17:06:43.662335 41896] Releasing lock C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/b/stats.lock
+[2021-03-18T17:06:43.727162 42628] === CCACHE 3.7.12 STARTED =========================================
+[2021-03-18T17:06:43.727162 42628] Config: (default) base_dir = 
+[2021-03-18T17:06:43.727162 42628] Config: (environment) cache_dir = C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2021-03-18T17:06:43.727162 42628] Config: (default) cache_dir_levels = 2
+[2021-03-18T17:06:43.727162 42628] Config: (default) compiler = 
+[2021-03-18T17:06:43.727162 42628] Config: (default) compiler_check = mtime
+[2021-03-18T17:06:43.727162 42628] Config: (default) compression = false
+[2021-03-18T17:06:43.727162 42628] Config: (default) compression_level = 6
+[2021-03-18T17:06:43.727162 42628] Config: (default) cpp_extension = 
+[2021-03-18T17:06:43.727162 42628] Config: (default) debug = false
+[2021-03-18T17:06:43.727162 42628] Config: (default) depend_mode = false
+[2021-03-18T17:06:43.727162 42628] Config: (default) direct_mode = true
+[2021-03-18T17:06:43.727162 42628] Config: (default) disable = false
+[2021-03-18T17:06:43.727162 42628] Config: (default) extra_files_to_hash = 
+[2021-03-18T17:06:43.727162 42628] Config: (default) hard_link = false
+[2021-03-18T17:06:43.727162 42628] Config: (default) hash_dir = true
+[2021-03-18T17:06:43.727162 42628] Config: (default) ignore_headers_in_manifest = 
+[2021-03-18T17:06:43.727162 42628] Config: (default) keep_comments_cpp = false
+[2021-03-18T17:06:43.727162 42628] Config: (default) limit_multiple = 0.8
+[2021-03-18T17:06:43.727162 42628] Config: (environment) log_file = D:\Projek\Node-Compiler\Python-Javanese\gblk.build\ccache-36680.txt
+[2021-03-18T17:06:43.727162 42628] Config: (default) max_files = 0
+[2021-03-18T17:06:43.727162 42628] Config: (C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/ccache.conf) max_size = 5.0G
+[2021-03-18T17:06:43.727162 42628] Config: (default) path = 
+[2021-03-18T17:06:43.727162 42628] Config: (default) pch_external_checksum = false
+[2021-03-18T17:06:43.727162 42628] Config: (default) prefix_command = 
+[2021-03-18T17:06:43.727162 42628] Config: (default) prefix_command_cpp = 
+[2021-03-18T17:06:43.727162 42628] Config: (default) read_only = false
+[2021-03-18T17:06:43.727162 42628] Config: (default) read_only_direct = false
+[2021-03-18T17:06:43.727162 42628] Config: (default) recache = false
+[2021-03-18T17:06:43.727162 42628] Config: (default) run_second_cpp = true
+[2021-03-18T17:06:43.727162 42628] Config: (default) sloppiness = 
+[2021-03-18T17:06:43.727162 42628] Config: (default) stats = true
+[2021-03-18T17:06:43.727162 42628] Config: (default) temporary_dir = 
+[2021-03-18T17:06:43.727162 42628] Config: (default) umask = 
+[2021-03-18T17:06:43.728162 42628] Command line: C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\ccache\v3.7.12\ccache.exe C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\gcc\x86_64\10.2.0-11.0.0-8.0.0-r5\mingw64\bin\gcc.exe -o static_src\MainProgram.o -c -std=c11 -fvisibility=hidden -fwrapv -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -fcompare-debug-second -O3 -pipe -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=0 -D_NUITKA_EXE -IC:\users\brahmana\appdata\local\programs\python\python39\include -I. -IC:\users\brahmana\appdata\local\programs\python\python39\lib\SITE-P~1\nuitka\build\include -IC:\users\brahmana\appdata\local\programs\python\python39\lib\SITE-P~1\nuitka\build\static_src static_src\MainProgram.c
+[2021-03-18T17:06:43.728162 42628] Hostname: DESKTOP-4AGRVN6
+[2021-03-18T17:06:43.728162 42628] Working directory: D:\Projek\Node-Compiler\Python-Javanese\gblk.build
+[2021-03-18T17:06:43.728162 42628] Source file: static_src\MainProgram.c
+[2021-03-18T17:06:43.728162 42628] Object file: static_src\MainProgram.o
+[2021-03-18T17:06:43.728162 42628] Trying direct lookup
+[2021-03-18T17:06:43.728162 42628] Looking for object file hash in C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/9/c/08085f469858e4cec61c8306f720f2-24650.manifest
+[2021-03-18T17:06:43.794978 8436 ] === CCACHE 3.7.12 STARTED =========================================
+[2021-03-18T17:06:43.794978 8436 ] Config: (default) base_dir = 
+[2021-03-18T17:06:43.794978 8436 ] Config: (environment) cache_dir = C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2021-03-18T17:06:43.794978 8436 ] Config: (default) cache_dir_levels = 2
+[2021-03-18T17:06:43.794978 8436 ] Config: (default) compiler = 
+[2021-03-18T17:06:43.794978 8436 ] Config: (default) compiler_check = mtime
+[2021-03-18T17:06:43.794978 8436 ] Config: (default) compression = false
+[2021-03-18T17:06:43.794978 8436 ] Config: (default) compression_level = 6
+[2021-03-18T17:06:43.794978 8436 ] Config: (default) cpp_extension = 
+[2021-03-18T17:06:43.794978 8436 ] Config: (default) debug = false
+[2021-03-18T17:06:43.794978 8436 ] Config: (default) depend_mode = false
+[2021-03-18T17:06:43.794978 8436 ] Config: (default) direct_mode = true
+[2021-03-18T17:06:43.794978 8436 ] Config: (default) disable = false
+[2021-03-18T17:06:43.794978 8436 ] Config: (default) extra_files_to_hash = 
+[2021-03-18T17:06:43.794978 8436 ] Config: (default) hard_link = false
+[2021-03-18T17:06:43.794978 8436 ] Config: (default) hash_dir = true
+[2021-03-18T17:06:43.794978 8436 ] Config: (default) ignore_headers_in_manifest = 
+[2021-03-18T17:06:43.794978 8436 ] Config: (default) keep_comments_cpp = false
+[2021-03-18T17:06:43.794978 8436 ] Config: (default) limit_multiple = 0.8
+[2021-03-18T17:06:43.794978 8436 ] Config: (environment) log_file = D:\Projek\Node-Compiler\Python-Javanese\gblk.build\ccache-36680.txt
+[2021-03-18T17:06:43.794978 8436 ] Config: (default) max_files = 0
+[2021-03-18T17:06:43.794978 8436 ] Config: (C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/ccache.conf) max_size = 5.0G
+[2021-03-18T17:06:43.794978 8436 ] Config: (default) path = 
+[2021-03-18T17:06:43.794978 8436 ] Config: (default) pch_external_checksum = false
+[2021-03-18T17:06:43.794978 8436 ] Config: (default) prefix_command = 
+[2021-03-18T17:06:43.794978 8436 ] Config: (default) prefix_command_cpp = 
+[2021-03-18T17:06:43.794978 8436 ] Config: (default) read_only = false
+[2021-03-18T17:06:43.794978 8436 ] Config: (default) read_only_direct = false
+[2021-03-18T17:06:43.794978 8436 ] Config: (default) recache = false
+[2021-03-18T17:06:43.794978 8436 ] Config: (default) run_second_cpp = true
+[2021-03-18T17:06:43.794978 8436 ] Config: (default) sloppiness = 
+[2021-03-18T17:06:43.794978 8436 ] Config: (default) stats = true
+[2021-03-18T17:06:43.794978 8436 ] Config: (default) temporary_dir = 
+[2021-03-18T17:06:43.794978 8436 ] Config: (default) umask = 
+[2021-03-18T17:06:43.794978 8436 ] Command line: C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\ccache\v3.7.12\ccache.exe C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\gcc\x86_64\10.2.0-11.0.0-8.0.0-r5\mingw64\bin\gcc.exe -o static_src\CompiledCellType.o -c -std=c11 -fvisibility=hidden -fwrapv -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -fcompare-debug-second -O3 -pipe -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=0 -D_NUITKA_EXE -IC:\users\brahmana\appdata\local\programs\python\python39\include -I. -IC:\users\brahmana\appdata\local\programs\python\python39\lib\SITE-P~1\nuitka\build\include -IC:\users\brahmana\appdata\local\programs\python\python39\lib\SITE-P~1\nuitka\build\static_src static_src\CompiledCellType.c
+[2021-03-18T17:06:43.794978 8436 ] Hostname: DESKTOP-4AGRVN6
+[2021-03-18T17:06:43.794978 8436 ] Working directory: D:\Projek\Node-Compiler\Python-Javanese\gblk.build
+[2021-03-18T17:06:43.795976 8436 ] Source file: static_src\CompiledCellType.c
+[2021-03-18T17:06:43.795976 8436 ] Object file: static_src\CompiledCellType.o
+[2021-03-18T17:06:43.795976 8436 ] Trying direct lookup
+[2021-03-18T17:06:43.795976 8436 ] Looking for object file hash in C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/d/0/d61e5852e8a8a08895e069f4942f5f-8047.manifest
+[2021-03-18T17:06:43.870777 26812] === CCACHE 3.7.12 STARTED =========================================
+[2021-03-18T17:06:43.870777 26812] Config: (default) base_dir = 
+[2021-03-18T17:06:43.870777 26812] Config: (environment) cache_dir = C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2021-03-18T17:06:43.870777 26812] Config: (default) cache_dir_levels = 2
+[2021-03-18T17:06:43.870777 26812] Config: (default) compiler = 
+[2021-03-18T17:06:43.870777 26812] Config: (default) compiler_check = mtime
+[2021-03-18T17:06:43.870777 26812] Config: (default) compression = false
+[2021-03-18T17:06:43.870777 26812] Config: (default) compression_level = 6
+[2021-03-18T17:06:43.870777 26812] Config: (default) cpp_extension = 
+[2021-03-18T17:06:43.870777 26812] Config: (default) debug = false
+[2021-03-18T17:06:43.870777 26812] Config: (default) depend_mode = false
+[2021-03-18T17:06:43.870777 26812] Config: (default) direct_mode = true
+[2021-03-18T17:06:43.870777 26812] Config: (default) disable = false
+[2021-03-18T17:06:43.870777 26812] Config: (default) extra_files_to_hash = 
+[2021-03-18T17:06:43.870777 26812] Config: (default) hard_link = false
+[2021-03-18T17:06:43.870777 26812] Config: (default) hash_dir = true
+[2021-03-18T17:06:43.870777 26812] Config: (default) ignore_headers_in_manifest = 
+[2021-03-18T17:06:43.870777 26812] Config: (default) keep_comments_cpp = false
+[2021-03-18T17:06:43.870777 26812] Config: (default) limit_multiple = 0.8
+[2021-03-18T17:06:43.870777 26812] Config: (environment) log_file = D:\Projek\Node-Compiler\Python-Javanese\gblk.build\ccache-36680.txt
+[2021-03-18T17:06:43.870777 26812] Config: (default) max_files = 0
+[2021-03-18T17:06:43.870777 26812] Config: (C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/ccache.conf) max_size = 5.0G
+[2021-03-18T17:06:43.870777 26812] Config: (default) path = 
+[2021-03-18T17:06:43.870777 26812] Config: (default) pch_external_checksum = false
+[2021-03-18T17:06:43.870777 26812] Config: (default) prefix_command = 
+[2021-03-18T17:06:43.870777 26812] Config: (default) prefix_command_cpp = 
+[2021-03-18T17:06:43.870777 26812] Config: (default) read_only = false
+[2021-03-18T17:06:43.870777 26812] Config: (default) read_only_direct = false
+[2021-03-18T17:06:43.870777 26812] Config: (default) recache = false
+[2021-03-18T17:06:43.870777 26812] Config: (default) run_second_cpp = true
+[2021-03-18T17:06:43.870777 26812] Config: (default) sloppiness = 
+[2021-03-18T17:06:43.870777 26812] Config: (default) stats = true
+[2021-03-18T17:06:43.870777 26812] Config: (default) temporary_dir = 
+[2021-03-18T17:06:43.870777 26812] Config: (default) umask = 
+[2021-03-18T17:06:43.871773 26812] Command line: C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\ccache\v3.7.12\ccache.exe C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\gcc\x86_64\10.2.0-11.0.0-8.0.0-r5\mingw64\bin\gcc.exe -o static_src\CompiledFunctionType.o -c -std=c11 -fvisibility=hidden -fwrapv -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -fcompare-debug-second -O3 -pipe -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=0 -D_NUITKA_EXE -IC:\users\brahmana\appdata\local\programs\python\python39\include -I. -IC:\users\brahmana\appdata\local\programs\python\python39\lib\SITE-P~1\nuitka\build\include -IC:\users\brahmana\appdata\local\programs\python\python39\lib\SITE-P~1\nuitka\build\static_src static_src\CompiledFunctionType.c
+[2021-03-18T17:06:43.871773 26812] Hostname: DESKTOP-4AGRVN6
+[2021-03-18T17:06:43.871773 26812] Working directory: D:\Projek\Node-Compiler\Python-Javanese\gblk.build
+[2021-03-18T17:06:43.871773 26812] Source file: static_src\CompiledFunctionType.c
+[2021-03-18T17:06:43.871773 26812] Object file: static_src\CompiledFunctionType.o
+[2021-03-18T17:06:43.871773 26812] Trying direct lookup
+[2021-03-18T17:06:43.872771 26812] Looking for object file hash in C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/3/6/34fe4a40895f9f1f31e0ffca66048f-79028.manifest
+[2021-03-18T17:06:43.881747 8436 ] Got object file hash from manifest
+[2021-03-18T17:06:43.882751 8436 ] Copying C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/c/a/d1d6523c400d2f69c3d39216a5f7f0-634040.o to static_src\CompiledCellType.o (uncompressed)
+[2021-03-18T17:06:43.882751 8436 ] Created from cache: C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/c/a/d1d6523c400d2f69c3d39216a5f7f0-634040.o -> static_src\CompiledCellType.o
+[2021-03-18T17:06:43.882751 8436 ] Succeeded getting cached result
+[2021-03-18T17:06:43.882751 8436 ] Result: cache hit (direct)
+[2021-03-18T17:06:43.883742 8436 ] Acquired lock C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/c/stats.lock
+[2021-03-18T17:06:43.883742 8436 ] Releasing lock C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/c/stats.lock
+[2021-03-18T17:06:43.938595 21616] === CCACHE 3.7.12 STARTED =========================================
+[2021-03-18T17:06:43.938595 21616] Config: (default) base_dir = 
+[2021-03-18T17:06:43.938595 21616] Config: (environment) cache_dir = C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2021-03-18T17:06:43.938595 21616] Config: (default) cache_dir_levels = 2
+[2021-03-18T17:06:43.938595 21616] Config: (default) compiler = 
+[2021-03-18T17:06:43.938595 21616] Config: (default) compiler_check = mtime
+[2021-03-18T17:06:43.938595 21616] Config: (default) compression = false
+[2021-03-18T17:06:43.938595 21616] Config: (default) compression_level = 6
+[2021-03-18T17:06:43.938595 21616] Config: (default) cpp_extension = 
+[2021-03-18T17:06:43.938595 21616] Config: (default) debug = false
+[2021-03-18T17:06:43.938595 21616] Config: (default) depend_mode = false
+[2021-03-18T17:06:43.938595 21616] Config: (default) direct_mode = true
+[2021-03-18T17:06:43.938595 21616] Config: (default) disable = false
+[2021-03-18T17:06:43.938595 21616] Config: (default) extra_files_to_hash = 
+[2021-03-18T17:06:43.938595 21616] Config: (default) hard_link = false
+[2021-03-18T17:06:43.938595 21616] Config: (default) hash_dir = true
+[2021-03-18T17:06:43.938595 21616] Config: (default) ignore_headers_in_manifest = 
+[2021-03-18T17:06:43.938595 21616] Config: (default) keep_comments_cpp = false
+[2021-03-18T17:06:43.938595 21616] Config: (default) limit_multiple = 0.8
+[2021-03-18T17:06:43.938595 21616] Config: (environment) log_file = D:\Projek\Node-Compiler\Python-Javanese\gblk.build\ccache-36680.txt
+[2021-03-18T17:06:43.938595 21616] Config: (default) max_files = 0
+[2021-03-18T17:06:43.938595 21616] Config: (C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/ccache.conf) max_size = 5.0G
+[2021-03-18T17:06:43.938595 21616] Config: (default) path = 
+[2021-03-18T17:06:43.938595 21616] Config: (default) pch_external_checksum = false
+[2021-03-18T17:06:43.938595 21616] Config: (default) prefix_command = 
+[2021-03-18T17:06:43.938595 21616] Config: (default) prefix_command_cpp = 
+[2021-03-18T17:06:43.938595 21616] Config: (default) read_only = false
+[2021-03-18T17:06:43.938595 21616] Config: (default) read_only_direct = false
+[2021-03-18T17:06:43.938595 21616] Config: (default) recache = false
+[2021-03-18T17:06:43.938595 21616] Config: (default) run_second_cpp = true
+[2021-03-18T17:06:43.938595 21616] Config: (default) sloppiness = 
+[2021-03-18T17:06:43.938595 21616] Config: (default) stats = true
+[2021-03-18T17:06:43.938595 21616] Config: (default) temporary_dir = 
+[2021-03-18T17:06:43.938595 21616] Config: (default) umask = 
+[2021-03-18T17:06:43.938595 21616] Command line: C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\ccache\v3.7.12\ccache.exe C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\gcc\x86_64\10.2.0-11.0.0-8.0.0-r5\mingw64\bin\gcc.exe -o static_src\CompiledGeneratorType.o -c -std=c11 -fvisibility=hidden -fwrapv -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -fcompare-debug-second -O3 -pipe -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=0 -D_NUITKA_EXE -IC:\users\brahmana\appdata\local\programs\python\python39\include -I. -IC:\users\brahmana\appdata\local\programs\python\python39\lib\SITE-P~1\nuitka\build\include -IC:\users\brahmana\appdata\local\programs\python\python39\lib\SITE-P~1\nuitka\build\static_src static_src\CompiledGeneratorType.c
+[2021-03-18T17:06:43.939592 21616] Hostname: DESKTOP-4AGRVN6
+[2021-03-18T17:06:43.939592 21616] Working directory: D:\Projek\Node-Compiler\Python-Javanese\gblk.build
+[2021-03-18T17:06:43.939592 21616] Source file: static_src\CompiledGeneratorType.c
+[2021-03-18T17:06:43.939592 21616] Object file: static_src\CompiledGeneratorType.o
+[2021-03-18T17:06:43.939592 21616] Trying direct lookup
+[2021-03-18T17:06:43.939592 21616] Looking for object file hash in C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/7/e/0ae1ed5c150a7e5359bf796e7b0d68-57477.manifest
+[2021-03-18T17:06:43.943581 42628] Got object file hash from manifest
+[2021-03-18T17:06:43.944579 42628] Copying C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/9/4/26412b1aff9e3e86292a675cf0f98f-4124015.o to static_src\MainProgram.o (uncompressed)
+[2021-03-18T17:06:43.944579 42628] Created from cache: C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/9/4/26412b1aff9e3e86292a675cf0f98f-4124015.o -> static_src\MainProgram.o
+[2021-03-18T17:06:43.944579 42628] Succeeded getting cached result
+[2021-03-18T17:06:43.944579 42628] Result: cache hit (direct)
+[2021-03-18T17:06:43.944579 42628] Acquired lock C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/9/stats.lock
+[2021-03-18T17:06:43.945577 42628] Releasing lock C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/9/stats.lock
+[2021-03-18T17:06:43.957543 26812] Got object file hash from manifest
+[2021-03-18T17:06:43.957543 26812] Copying C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/e/1/8f75660a9083c29212fcdde7097c25-714533.o to static_src\CompiledFunctionType.o (uncompressed)
+[2021-03-18T17:06:43.957543 26812] Created from cache: C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/e/1/8f75660a9083c29212fcdde7097c25-714533.o -> static_src\CompiledFunctionType.o
+[2021-03-18T17:06:43.958553 26812] Succeeded getting cached result
+[2021-03-18T17:06:43.958553 26812] Result: cache hit (direct)
+[2021-03-18T17:06:43.958553 26812] Acquired lock C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/e/stats.lock
+[2021-03-18T17:06:43.958553 26812] Releasing lock C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/e/stats.lock
+[2021-03-18T17:06:43.996440 21616] Got object file hash from manifest
+[2021-03-18T17:06:43.997437 21616] Copying C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/7/3/c91fe3c84df31af17c99986f5ce4fc-809325.o to static_src\CompiledGeneratorType.o (uncompressed)
+[2021-03-18T17:06:43.997437 21616] Created from cache: C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/7/3/c91fe3c84df31af17c99986f5ce4fc-809325.o -> static_src\CompiledGeneratorType.o
+[2021-03-18T17:06:43.998435 21616] Succeeded getting cached result
+[2021-03-18T17:06:43.998435 21616] Result: cache hit (direct)
+[2021-03-18T17:06:43.998435 21616] Acquired lock C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/7/stats.lock
+[2021-03-18T17:06:43.998435 21616] Releasing lock C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/7/stats.lock
+[2021-03-18T17:06:44.116120 14568] === CCACHE 3.7.12 STARTED =========================================
+[2021-03-18T17:06:44.116120 14568] Config: (default) base_dir = 
+[2021-03-18T17:06:44.116120 14568] Config: (environment) cache_dir = C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2021-03-18T17:06:44.116120 14568] Config: (default) cache_dir_levels = 2
+[2021-03-18T17:06:44.116120 14568] Config: (default) compiler = 
+[2021-03-18T17:06:44.116120 14568] Config: (default) compiler_check = mtime
+[2021-03-18T17:06:44.116120 14568] Config: (default) compression = false
+[2021-03-18T17:06:44.116120 14568] Config: (default) compression_level = 6
+[2021-03-18T17:06:44.116120 14568] Config: (default) cpp_extension = 
+[2021-03-18T17:06:44.116120 14568] Config: (default) debug = false
+[2021-03-18T17:06:44.116120 14568] Config: (default) depend_mode = false
+[2021-03-18T17:06:44.116120 14568] Config: (default) direct_mode = true
+[2021-03-18T17:06:44.116120 14568] Config: (default) disable = false
+[2021-03-18T17:06:44.116120 14568] Config: (default) extra_files_to_hash = 
+[2021-03-18T17:06:44.116120 14568] Config: (default) hard_link = false
+[2021-03-18T17:06:44.116120 14568] Config: (default) hash_dir = true
+[2021-03-18T17:06:44.116120 14568] Config: (default) ignore_headers_in_manifest = 
+[2021-03-18T17:06:44.116120 14568] Config: (default) keep_comments_cpp = false
+[2021-03-18T17:06:44.116120 14568] Config: (default) limit_multiple = 0.8
+[2021-03-18T17:06:44.116120 14568] Config: (environment) log_file = D:\Projek\Node-Compiler\Python-Javanese\gblk.build\ccache-36680.txt
+[2021-03-18T17:06:44.116120 14568] Config: (default) max_files = 0
+[2021-03-18T17:06:44.116120 14568] Config: (C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/ccache.conf) max_size = 5.0G
+[2021-03-18T17:06:44.116120 14568] Config: (default) path = 
+[2021-03-18T17:06:44.116120 14568] Config: (default) pch_external_checksum = false
+[2021-03-18T17:06:44.116120 14568] Config: (default) prefix_command = 
+[2021-03-18T17:06:44.116120 14568] Config: (default) prefix_command_cpp = 
+[2021-03-18T17:06:44.116120 14568] Config: (default) read_only = false
+[2021-03-18T17:06:44.116120 14568] Config: (default) read_only_direct = false
+[2021-03-18T17:06:44.116120 14568] Config: (default) recache = false
+[2021-03-18T17:06:44.116120 14568] Config: (default) run_second_cpp = true
+[2021-03-18T17:06:44.116120 14568] Config: (default) sloppiness = 
+[2021-03-18T17:06:44.116120 14568] Config: (default) stats = true
+[2021-03-18T17:06:44.116120 14568] Config: (default) temporary_dir = 
+[2021-03-18T17:06:44.116120 14568] Config: (default) umask = 
+[2021-03-18T17:06:44.117118 14568] Command line: C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\ccache\v3.7.12\ccache.exe C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\gcc\x86_64\10.2.0-11.0.0-8.0.0-r5\mingw64\bin\gcc.exe -o static_src\CompiledCodeHelpers.o -c -std=c11 -fvisibility=hidden -fwrapv -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -fcompare-debug-second -O3 -pipe -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=0 -D_NUITKA_EXE -IC:\users\brahmana\appdata\local\programs\python\python39\include -I. -IC:\users\brahmana\appdata\local\programs\python\python39\lib\SITE-P~1\nuitka\build\include -IC:\users\brahmana\appdata\local\programs\python\python39\lib\SITE-P~1\nuitka\build\static_src static_src\CompiledCodeHelpers.c
+[2021-03-18T17:06:44.117118 14568] Hostname: DESKTOP-4AGRVN6
+[2021-03-18T17:06:44.117118 14568] Working directory: D:\Projek\Node-Compiler\Python-Javanese\gblk.build
+[2021-03-18T17:06:44.117118 14568] Source file: static_src\CompiledCodeHelpers.c
+[2021-03-18T17:06:44.117118 14568] Object file: static_src\CompiledCodeHelpers.o
+[2021-03-18T17:06:44.117118 14568] Trying direct lookup
+[2021-03-18T17:06:44.118115 14568] Looking for object file hash in C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/d/2/a7362a42a02f4d74adbd2578b9c76b-57188.manifest
+[2021-03-18T17:06:44.153020 3948 ] === CCACHE 3.7.12 STARTED =========================================
+[2021-03-18T17:06:44.153020 3948 ] Config: (default) base_dir = 
+[2021-03-18T17:06:44.153020 3948 ] Config: (environment) cache_dir = C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2021-03-18T17:06:44.153020 3948 ] Config: (default) cache_dir_levels = 2
+[2021-03-18T17:06:44.153020 3948 ] Config: (default) compiler = 
+[2021-03-18T17:06:44.153020 3948 ] Config: (default) compiler_check = mtime
+[2021-03-18T17:06:44.153020 3948 ] Config: (default) compression = false
+[2021-03-18T17:06:44.153020 3948 ] Config: (default) compression_level = 6
+[2021-03-18T17:06:44.153020 3948 ] Config: (default) cpp_extension = 
+[2021-03-18T17:06:44.153020 3948 ] Config: (default) debug = false
+[2021-03-18T17:06:44.153020 3948 ] Config: (default) depend_mode = false
+[2021-03-18T17:06:44.153020 3948 ] Config: (default) direct_mode = true
+[2021-03-18T17:06:44.153020 3948 ] Config: (default) disable = false
+[2021-03-18T17:06:44.153020 3948 ] Config: (default) extra_files_to_hash = 
+[2021-03-18T17:06:44.153020 3948 ] Config: (default) hard_link = false
+[2021-03-18T17:06:44.153020 3948 ] Config: (default) hash_dir = true
+[2021-03-18T17:06:44.153020 3948 ] Config: (default) ignore_headers_in_manifest = 
+[2021-03-18T17:06:44.153020 3948 ] Config: (default) keep_comments_cpp = false
+[2021-03-18T17:06:44.153020 3948 ] Config: (default) limit_multiple = 0.8
+[2021-03-18T17:06:44.153020 3948 ] Config: (environment) log_file = D:\Projek\Node-Compiler\Python-Javanese\gblk.build\ccache-36680.txt
+[2021-03-18T17:06:44.153020 3948 ] Config: (default) max_files = 0
+[2021-03-18T17:06:44.153020 3948 ] Config: (C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/ccache.conf) max_size = 5.0G
+[2021-03-18T17:06:44.153020 3948 ] Config: (default) path = 
+[2021-03-18T17:06:44.153020 3948 ] Config: (default) pch_external_checksum = false
+[2021-03-18T17:06:44.153020 3948 ] Config: (default) prefix_command = 
+[2021-03-18T17:06:44.153020 3948 ] Config: (default) prefix_command_cpp = 
+[2021-03-18T17:06:44.153020 3948 ] Config: (default) read_only = false
+[2021-03-18T17:06:44.153020 3948 ] Config: (default) read_only_direct = false
+[2021-03-18T17:06:44.153020 3948 ] Config: (default) recache = false
+[2021-03-18T17:06:44.153020 3948 ] Config: (default) run_second_cpp = true
+[2021-03-18T17:06:44.153020 3948 ] Config: (default) sloppiness = 
+[2021-03-18T17:06:44.153020 3948 ] Config: (default) stats = true
+[2021-03-18T17:06:44.153020 3948 ] Config: (default) temporary_dir = 
+[2021-03-18T17:06:44.153020 3948 ] Config: (default) umask = 
+[2021-03-18T17:06:44.154018 3948 ] Command line: C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\ccache\v3.7.12\ccache.exe C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\gcc\x86_64\10.2.0-11.0.0-8.0.0-r5\mingw64\bin\gcc.exe -o static_src\InspectPatcher.o -c -std=c11 -fvisibility=hidden -fwrapv -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -fcompare-debug-second -O3 -pipe -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=0 -D_NUITKA_EXE -IC:\users\brahmana\appdata\local\programs\python\python39\include -I. -IC:\users\brahmana\appdata\local\programs\python\python39\lib\SITE-P~1\nuitka\build\include -IC:\users\brahmana\appdata\local\programs\python\python39\lib\SITE-P~1\nuitka\build\static_src static_src\InspectPatcher.c
+[2021-03-18T17:06:44.154018 3948 ] Hostname: DESKTOP-4AGRVN6
+[2021-03-18T17:06:44.154018 3948 ] Working directory: D:\Projek\Node-Compiler\Python-Javanese\gblk.build
+[2021-03-18T17:06:44.154018 3948 ] Source file: static_src\InspectPatcher.c
+[2021-03-18T17:06:44.154018 3948 ] Object file: static_src\InspectPatcher.o
+[2021-03-18T17:06:44.154018 3948 ] Trying direct lookup
+[2021-03-18T17:06:44.155015 3948 ] Looking for object file hash in C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/1/4/61131e5ec1c8cbdaad27990c660582-13711.manifest
+[2021-03-18T17:06:44.201891 41300] === CCACHE 3.7.12 STARTED =========================================
+[2021-03-18T17:06:44.201891 41300] Config: (default) base_dir = 
+[2021-03-18T17:06:44.201891 41300] Config: (environment) cache_dir = C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2021-03-18T17:06:44.201891 41300] Config: (default) cache_dir_levels = 2
+[2021-03-18T17:06:44.201891 41300] Config: (default) compiler = 
+[2021-03-18T17:06:44.201891 41300] Config: (default) compiler_check = mtime
+[2021-03-18T17:06:44.201891 41300] Config: (default) compression = false
+[2021-03-18T17:06:44.201891 41300] Config: (default) compression_level = 6
+[2021-03-18T17:06:44.201891 41300] Config: (default) cpp_extension = 
+[2021-03-18T17:06:44.201891 41300] Config: (default) debug = false
+[2021-03-18T17:06:44.201891 41300] Config: (default) depend_mode = false
+[2021-03-18T17:06:44.201891 41300] Config: (default) direct_mode = true
+[2021-03-18T17:06:44.201891 41300] Config: (default) disable = false
+[2021-03-18T17:06:44.201891 41300] Config: (default) extra_files_to_hash = 
+[2021-03-18T17:06:44.201891 41300] Config: (default) hard_link = false
+[2021-03-18T17:06:44.201891 41300] Config: (default) hash_dir = true
+[2021-03-18T17:06:44.201891 41300] Config: (default) ignore_headers_in_manifest = 
+[2021-03-18T17:06:44.201891 41300] Config: (default) keep_comments_cpp = false
+[2021-03-18T17:06:44.201891 41300] Config: (default) limit_multiple = 0.8
+[2021-03-18T17:06:44.201891 41300] Config: (environment) log_file = D:\Projek\Node-Compiler\Python-Javanese\gblk.build\ccache-36680.txt
+[2021-03-18T17:06:44.201891 41300] Config: (default) max_files = 0
+[2021-03-18T17:06:44.201891 41300] Config: (C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/ccache.conf) max_size = 5.0G
+[2021-03-18T17:06:44.201891 41300] Config: (default) path = 
+[2021-03-18T17:06:44.201891 41300] Config: (default) pch_external_checksum = false
+[2021-03-18T17:06:44.201891 41300] Config: (default) prefix_command = 
+[2021-03-18T17:06:44.201891 41300] Config: (default) prefix_command_cpp = 
+[2021-03-18T17:06:44.201891 41300] Config: (default) read_only = false
+[2021-03-18T17:06:44.201891 41300] Config: (default) read_only_direct = false
+[2021-03-18T17:06:44.201891 41300] Config: (default) recache = false
+[2021-03-18T17:06:44.201891 41300] Config: (default) run_second_cpp = true
+[2021-03-18T17:06:44.201891 41300] Config: (default) sloppiness = 
+[2021-03-18T17:06:44.201891 41300] Config: (default) stats = true
+[2021-03-18T17:06:44.201891 41300] Config: (default) temporary_dir = 
+[2021-03-18T17:06:44.201891 41300] Config: (default) umask = 
+[2021-03-18T17:06:44.202888 41300] Command line: C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\ccache\v3.7.12\ccache.exe C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\gcc\x86_64\10.2.0-11.0.0-8.0.0-r5\mingw64\bin\gcc.exe -o static_src\MetaPathBasedLoader.o -c -std=c11 -fvisibility=hidden -fwrapv -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -fcompare-debug-second -O3 -pipe -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -DMS_WIN64 -D_NUITKA_CONSTANTS_FROM_RESOURCE -D_NUITKA_FROZEN=0 -D_NUITKA_EXE -IC:\users\brahmana\appdata\local\programs\python\python39\include -I. -IC:\users\brahmana\appdata\local\programs\python\python39\lib\SITE-P~1\nuitka\build\include -IC:\users\brahmana\appdata\local\programs\python\python39\lib\SITE-P~1\nuitka\build\static_src static_src\MetaPathBasedLoader.c
+[2021-03-18T17:06:44.202888 41300] Hostname: DESKTOP-4AGRVN6
+[2021-03-18T17:06:44.202888 41300] Working directory: D:\Projek\Node-Compiler\Python-Javanese\gblk.build
+[2021-03-18T17:06:44.202888 41300] Source file: static_src\MetaPathBasedLoader.c
+[2021-03-18T17:06:44.202888 41300] Object file: static_src\MetaPathBasedLoader.o
+[2021-03-18T17:06:44.203884 41300] Trying direct lookup
+[2021-03-18T17:06:44.203884 41300] Looking for object file hash in C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/0/2/6ecd5925242a28936801e1bec29f7f-52305.manifest
+[2021-03-18T17:06:44.245773 3948 ] Got object file hash from manifest
+[2021-03-18T17:06:44.246770 3948 ] Copying C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/a/e/3be4d325bf43c954078553612d8e1e-639725.o to static_src\InspectPatcher.o (uncompressed)
+[2021-03-18T17:06:44.246770 3948 ] Created from cache: C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/a/e/3be4d325bf43c954078553612d8e1e-639725.o -> static_src\InspectPatcher.o
+[2021-03-18T17:06:44.246770 3948 ] Succeeded getting cached result
+[2021-03-18T17:06:44.246770 3948 ] Result: cache hit (direct)
+[2021-03-18T17:06:44.247768 3948 ] Acquired lock C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/a/stats.lock
+[2021-03-18T17:06:44.247768 3948 ] Releasing lock C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/a/stats.lock
+[2021-03-18T17:06:44.268711 14568] Got object file hash from manifest
+[2021-03-18T17:06:44.269709 14568] Copying C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/2/0/4086a84aff977be730c7504eb7c63a-5326760.o to static_src\CompiledCodeHelpers.o (uncompressed)
+[2021-03-18T17:06:44.269709 14568] Created from cache: C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/2/0/4086a84aff977be730c7504eb7c63a-5326760.o -> static_src\CompiledCodeHelpers.o
+[2021-03-18T17:06:44.269709 14568] Succeeded getting cached result
+[2021-03-18T17:06:44.269709 14568] Result: cache hit (direct)
+[2021-03-18T17:06:44.269709 14568] Acquired lock C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/2/stats.lock
+[2021-03-18T17:06:44.270706 14568] Releasing lock C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/2/stats.lock
+[2021-03-18T17:06:44.295639 41300] Got object file hash from manifest
+[2021-03-18T17:06:44.295639 41300] Copying C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/7/5/82078ca65f5d2d0856799ee5c951b0-2992452.o to static_src\MetaPathBasedLoader.o (uncompressed)
+[2021-03-18T17:06:44.295639 41300] Created from cache: C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/7/5/82078ca65f5d2d0856799ee5c951b0-2992452.o -> static_src\MetaPathBasedLoader.o
+[2021-03-18T17:06:44.296637 41300] Succeeded getting cached result
+[2021-03-18T17:06:44.296637 41300] Result: cache hit (direct)
+[2021-03-18T17:06:44.296637 41300] Acquired lock C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/7/stats.lock
+[2021-03-18T17:06:44.297634 41300] Releasing lock C:\Users\brahmana\AppData\Local\Nuitka\Nuitka\Cache\ccache/7/stats.lock
