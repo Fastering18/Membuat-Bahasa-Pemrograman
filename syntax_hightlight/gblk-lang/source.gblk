@@ -1,0 +1,19 @@
+--[[
+ -- Versi terbaru, blok komentar support
+ -- highlight testing vscode
+]]
+
+jika benar maka
+    tulis("Program dimulai")
+    --tulis(panjang(ar))
+    --tulis(ar)
+tutup
+
+lokal jumlah_iter = 100
+lokal sus = "sus "
+
+saat jumlah_iter > 0 maka
+   lokal jumlah_iter = jumlah_iter - 1
+   tulis(sus + (100 - jumlah_iter) + "x")
+   tunggu(0.3)
+tutup
