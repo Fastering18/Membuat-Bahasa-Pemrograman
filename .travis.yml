@@ -11,7 +11,8 @@ python:
 #  - pip install nuitka
 script:
 #  - nuitka gblk.py
-  - python gblk.py ./testing/hello.gblk
-  - python gblk.py ./testing/Array.gblk
-  - python gblk.py ./testing/looping.gblk
-  - python gblk.py ./testing/variabel.gblk
+   - make test
+#  - python gblk.py ./testing/hello.gblk
+#  - python gblk.py ./testing/Array.gblk
+#  - python gblk.py ./testing/looping.gblk
+#  - python gblk.py ./testing/variabel.gblk
