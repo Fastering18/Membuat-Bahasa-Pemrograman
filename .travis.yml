@@ -8,9 +8,9 @@ python:
 before_install:
   - python -m pip install --upgrade pip  
 install:
-  - pip install nuitka --use-feature=2020-resolver
-  - nuitka gblk.py  
+  - pip install nuitka --user
 script:
+  - nuitka gblk.py
   - ./gblk.exe ./testing/hello.gblk
   - ./gblk.exe ./testing/Array.gblk
   - ./gblk.exe ./testing/looping.gblk
