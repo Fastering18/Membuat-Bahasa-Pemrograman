@@ -1,0 +1,18 @@
+language: python
+python:
+  - "3.5"
+  - "3.6"
+  - "3.7"
+  - "3.8"
+  - "3.9"
+before_install:
+  - python -m pip install --upgrade pip  
+install:
+  - pip install nuitka --use-feature=2020-resolver
+build:
+  - nuitka gblk.py
+script:
+  - ./gblk.exe ./testing/hello.gblk
+  - ./gblk.exe ./testing/Array.gblk
+  - ./gblk.exe ./testing/looping.gblk
+  - ./gblk.exe ./testing/variabel.gblk
