@@ -1,4 +1,4 @@
-# Membuat-Bahasa-Pemrograman
+# Membuat-Bahasa-Pemrograman ![travisci test](https://api.travis-ci.org/Fastering18/Membuat-Bahasa-Pemrograman.svg?branch=main)  
 Buat kreasi bahasa pemrograman sendiri dengan python!  
 
 Sebelum memulai, download terlebih dahulu dibawah ini
@@ -28,4 +28,37 @@ Parser dapat membuat pohon AST dan mengidentifikasi sintaks sebelum benar-benar 
 ## Interpreter  
 Interpreter adalah program komputer yang secara langsung menjalankan instruksi yang ditulis dalam bahasa pemrograman atau scripting, tanpa mengharuskannya sebelumnya telah dikompilasi ke dalam program bahasa mesin.  
 Interpreter dapat menjalankan intruksi tanpa harus menjadi _machine code_, interpreter dapat menghasilkan operasi matematika, _bitwise operator_, dll.  
+  
+# Menjalankan script  
+setelah build file binary (.exe), lakukan test dengan:  
+```./gblk.exe [lokasi file]```  
+
+Jalankan dengan Python:  
+```python gblk.py [lokasi file]```  
+
+Untuk menjalankan test ([Makefile](http://gnuwin32.sourceforge.net/packages/make.htm)):  
+```make test```  
+
+
+# Basic syntax  
+```gblk
+tulis("halo dunia") -- output halo dunia ke stdout
+
+jika benar maka
+   tulis("benar == true dan salah == false") -- boolean dasar
+tutup -- menutup if statement
+
+lokal str = "selamat pagi"
+tulis("Panjang string: " + panjang(str))
+tulis((str * 3) + "\nuntuk ketiga kalinya")
+
+lokal iterasi = 10
+saat iterasi > 1 maka
+   tulis(iterasi)
+   lokal iterasi = iterasi - 1
+tutup
+
+
+tulis("program selesai")
+```   
 
