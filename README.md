@@ -30,10 +30,10 @@ Interpreter adalah program komputer yang secara langsung menjalankan instruksi y
 Interpreter dapat menjalankan intruksi tanpa harus menjadi _machine code_, interpreter dapat menghasilkan operasi matematika, _bitwise operator_, dll.  
   
 # Menjalankan script  
-setelah build file binary (.exe), lakukan test dengan:  
+setelah build file binary (.exe), lakukan command:  
 ```./gblk.exe [lokasi file]```  
 
-Jalankan dengan Python:  
+Jalankan dengan Python jika tidak terdapat binary file:  
 ```python gblk.py [lokasi file]```  
 
 Untuk menjalankan test ([Makefile](http://gnuwin32.sourceforge.net/packages/make.htm)):  
@@ -61,4 +61,19 @@ tutup
 
 tulis("program selesai")
 ```   
-
+## Tipe data  
+- Angka  -> tipe data number, angka 1-9
+- String  -> tipe data string
+- Boolean  -> tipe data boolean (benar|salah)  
+- Array  -> tipe data array, ["indeks0", 1]
+## Built-in fungsi  
+- tulis(semua)  -> menulis ke stdout  
+- panjang(string|array)  -> menghitung panjang data  
+- tunggu(angka)  -> menghentikan sementara thread selama waktu yang ditentukan (detik)  
+- tipe(semua)  -> mendapatkan nama tipe data  
+- masukkan(array, semua)  -> memasukkan isi kedalam array (indeks terakhir)  
+- jalankan(lokasi_file)  -> mengesekusi file yang sudah ditentukan  
+## Built-in keyword  
+- jika `<kondisi>` maka `<ekspr>` tutup  -> ekuivalen dengan if statement  
+- saat `<kondisi>` maka `<ekspr>` tutup  -> ekuivalen dengan loop while statement  
+- untuk `<nama variabel>` = `<angka awal>` ke `<angka tujuan>` langkah `<koefisien>` maka `<ekspr>` tutup  -> ekuivalen dengan loop for statement  
