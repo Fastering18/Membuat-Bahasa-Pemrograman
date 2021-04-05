@@ -5,13 +5,13 @@ python:
   - "3.7"
   - "3.8"
   - "3.9"
-before_install:
-  - python -m pip install --upgrade pip  
-install:
-  - pip install nuitka
+#before_install:
+#  - python -m pip install --upgrade pip  
+#install:
+#  - pip install nuitka
 script:
-  - nuitka gblk.py
-  - ./gblk.exe ./testing/hello.gblk
-  - ./gblk.exe ./testing/Array.gblk
-  - ./gblk.exe ./testing/looping.gblk
-  - ./gblk.exe ./testing/variabel.gblk
+#  - nuitka gblk.py
+  - python gblk.py ./testing/hello.gblk
+  - python gblk.py ./testing/Array.gblk
+  - python gblk.py ./testing/looping.gblk
+  - python gblk.py ./testing/variabel.gblk
