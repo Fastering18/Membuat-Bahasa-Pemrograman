@@ -1,6 +1,5 @@
 language: python
 python:
-  - "3.5"
   - "3.6"
   - "3.7"
   - "3.8"
@@ -12,7 +11,3 @@ python:
 script:
 #  - nuitka gblk.py
    - make test
-#  - python gblk.py ./testing/hello.gblk
-#  - python gblk.py ./testing/Array.gblk
-#  - python gblk.py ./testing/looping.gblk
-#  - python gblk.py ./testing/variabel.gblk
