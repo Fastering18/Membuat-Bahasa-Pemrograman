@@ -136,7 +136,7 @@ Konstruktor = [
 	"fungsi",     # function
 	"saat",       # while
 	"tutup",      # end (menutup blok statement)
-	"kembali",      # return
+	"kembali",    # return
 	"lanjutkan",  # continue
 	"berhenti"    # break
 ]
@@ -195,7 +195,7 @@ class Lexer:
 				tokens.append(self._buatAngka())
 			elif self.karakterSkrg in Huruf:
 				tokens.append(self._daftarlokal())
-			elif self.karakterSkrg == '"':
+			elif self.karakterSkrg in '"\'':
 				tokens.append(self._buatString())
 			elif self.karakterSkrg == "+":
 				tokens.append(Token(TokenTambah, posisi_awal=self.posisi))
@@ -278,6 +278,7 @@ class Lexer:
 
 	def _buatString(self):
 		string = ""
+		konstruktor = self.karakterSkrg
 		posisi_awal = self.posisi.salin()
 		escape_karakter = False
 		self.maju()
@@ -285,7 +286,7 @@ class Lexer:
 		daftar_escape_karakter = {"n": "\n", "t": "\t"}
 
 		while self.karakterSkrg != None and (
-			self.karakterSkrg != '"' or escape_karakter
+			self.karakterSkrg != konstruktor or escape_karakter
 		):
 			if escape_karakter:
 				string += daftar_escape_karakter.get(
@@ -663,7 +664,7 @@ class Parser:
 					SintaksSalah(
 						self.tokenSkrg.posisi_awal,
 						self.tokenSkrg.posisi_akhir,
-						"Dibutuhkan ')', 'lokal', 'jika', 'untuk', 'saat', 'fungsi', int, float, pengenal lokal, '+', '-', '(' atau 'bukan'",
+						"Dibutuhkan ')', 'lokal', 'jika', 'untuk', 'saat', 'fungsi', int, float, nama variabel, '+', '-', '(' atau 'bukan'",
 					)
 				)
 
@@ -832,7 +833,7 @@ class Parser:
 				SintaksSalah(
 					self.tokenSkrg.posisi_awal,
 					self.tokenSkrg.posisi_akhir,
-					f"Dibutuhkan lokal pengenal",
+					f"Dibutuhkan nama variabel",
 				)
 			)
 
@@ -1076,7 +1077,7 @@ class Parser:
 						SintaksSalah(
 							self.tokenSkrg.posisi_awal,
 							self.tokenSkrg.posisi_akhir,
-							"Dibutuhkan ')', 'lokal', 'jika', 'untuk', 'saat', 'fungsi', int, float, pengenal lokal, '+', '-', '(' atau 'bukan'",
+							"Dibutuhkan ')', 'lokal', 'jika', 'untuk', 'saat', 'fungsi', int, float, nama variabel, '+', '-', '(' atau 'bukan'",
 						)
 					)
 
@@ -1247,7 +1248,7 @@ class Parser:
 					SintaksSalah(
 						self.tokenSkrg.posisi_awal,
 						self.tokenSkrg.posisi_akhir,
-						"Harus memiliki nama lokal",
+						"Harus memiliki nama variabel",
 					)
 				)
 
@@ -1260,7 +1261,7 @@ class Parser:
 					SintaksSalah(
 						self.tokenSkrg.posisi_awal,
 						self.tokenSkrg.posisi_akhir,
-						"Harus memiliki '=' untuk mendeklarasikan lokal",
+						"Harus memiliki '=' untuk mendeklarasikan variabel",
 					)
 				)
 
@@ -1325,7 +1326,7 @@ class Parser:
 					SintaksSalah(
 						self.tokenSkrg.posisi_awal,
 						self.tokenSkrg.posisi_akhir,
-						"Dibutuhkan pengenal lokal atau '('",
+						"Dibutuhkan nama variabel atau '('",
 					)
 				)
 
@@ -1347,7 +1348,7 @@ class Parser:
 						SintaksSalah(
 							self.tokenSkrg.posisi_awal,
 							self.tokenSkrg.posisi_akhir,
-							"Dibutuhkan pengenal lokal atau '('",
+							"Dibutuhkan nama variabel atau '('",
 						)
 					)
 
@@ -1369,7 +1370,7 @@ class Parser:
 					SintaksSalah(
 						self.tokenSkrg.posisi_awal,
 						self.tokenSkrg.posisi_akhir,
-						"Dibutuhkan pengenal lokal atau ')'",
+						"Dibutuhkan nama variabel atau ')'",
 					)
 				)
 
@@ -1566,7 +1567,7 @@ class Isi:
 class Nil(Isi):
 	def __init__(self):
 		super().__init__()
-		self.nilai = "nil"
+		self.nilai = 0
 	
 	def tambah_ke(self, dataLain):
 		if isinstance(dataLain, Angka):
@@ -1586,13 +1587,24 @@ class Nil(Isi):
 
 	def modulus_oleh(self, angkaLain):
 		return self.salin(), None
+	
+	def dan_oleh(self, lain):
+		hasil = self.nilai and lain.nilai
+		return convert_tipe(hasil).atur_konteks(self.konteks), None
+	
+	def atau_oleh(self, lain):
+		hasil = self.nilai or lain.nilai
+		return convert_tipe(hasil).atur_konteks(self.konteks), None
+
+	def bukan(self):
+		return Angka(1 if self.nilai == 0 else 0).atur_konteks(self.konteks), None
 
 	def salin(self):
 		salinan = Nil()
 		salinan.atur_konteks(self.konteks)
 		salinan.atur_posisi(self.posisi_awal, self.posisi_akhir)
 		return salinan
-
+ 
 	def __repr__(self):
 		return "nil"
 
@@ -1648,10 +1660,7 @@ class Angka(Isi):
 			return None, Isi.operasi_illegal(self, angkaLain)
 
 	def perbandingan_persamaan(self, lain):
-		if isinstance(lain, Angka):
-			return Angka(int(self.nilai == lain.nilai)).atur_konteks(self.konteks), None
-		else:
-			return None, Isi.operasi_illegal(self, lain)
+		return Angka(int(self.nilai == lain.nilai)).atur_konteks(self.konteks), None
 
 	def perbandingan_tidak_sama(self, lain):
 		if isinstance(lain, Angka):
@@ -1684,19 +1693,12 @@ class Angka(Isi):
 			return None, Isi.operasi_illegal(self, lain)
 
 	def dan_oleh(self, lain):
-		if isinstance(lain, Angka):
-			return (
-				Angka(int(self.nilai and lain.nilai)).atur_konteks(self.konteks),
-				None,
-			)
-		else:
-			return None, Isi.operasi_illegal(self, lain)
-
+		hasil = self.nilai and lain.nilai
+		return convert_tipe(hasil).atur_konteks(self.konteks), None
+	
 	def atau_oleh(self, lain):
-		if isinstance(lain, Angka):
-			return Angka(int(self.nilai or lain.nilai)).atur_konteks(self.konteks), None
-		else:
-			return None, Isi.operasi_illegal(self, lain)
+		hasil = self.nilai or lain.nilai
+		return convert_tipe(hasil).atur_konteks(self.konteks), None
 
 	def bukan(self):
 		return Angka(1 if self.nilai == 0 else 0).atur_konteks(self.konteks), None
@@ -1718,7 +1720,6 @@ Angka.salah = Angka(0)
 Angka.benar = Angka(1)
 Angka.nil = Nil()
 
-
 class String(Isi):
 	def __init__(self, isi):
 		super().__init__()
@@ -1738,6 +1739,20 @@ class String(Isi):
 			return String(self.nilai * angkaLain.nilai).atur_konteks(self.konteks), None
 		else:
 			return None, Isi.operasi_illegal(self, angkaLain)
+	
+	def perbandingan_persamaan(self, lain):
+		return Angka(int(self.nilai == lain.nilai)).atur_konteks(self.konteks), None
+
+	def perbandingan_tidak_sama(self, lain):
+		return Angka(int(self.nilai != lain.nilai)).atur_konteks(self.konteks), None
+
+	def dan_oleh(self, lain):
+		hasil = self.nilai and lain.nilai
+		return convert_tipe(hasil).atur_konteks(self.konteks), None
+	
+	def atau_oleh(self, lain):
+		hasil = self.nilai or lain.nilai
+		return convert_tipe(hasil).atur_konteks(self.konteks), None
 
 	def apakah_benar(self):
 		return len(self.nilai) > 0
@@ -1749,7 +1764,7 @@ class String(Isi):
 		return salin
 
 	def __repr__(self):
-		return f'"{self.nilai}"'
+		return self.nilai
 
 
 class Daftar(Isi):
@@ -1794,6 +1809,14 @@ class Daftar(Isi):
 				)
 		else:
 			return None, Isi.operasi_illegal(self, lain)
+	
+	def dan_oleh(self, lain):
+		hasil = self.nilai or lain.nilai
+		return convert_tipe(hasil).atur_konteks(self.konteks), None
+	
+	def atau_oleh(self, lain):
+		hasil = self.nilai or lain.nilai
+		return convert_tipe(hasil).atur_konteks(self.konteks), None
 
 	def salin(self):
 		salinan = Daftar(self.isi)
@@ -1888,6 +1911,17 @@ class Fungsi(BaseFungsi):
 		return f"<fungsi {self.nama}>"
 
 
+def convert_tipe(data):
+	tipe = data.__class__.__name__
+	if tipe == "str":
+		return String(data)
+	elif tipe == "int":
+		return Angka(data)
+	elif tipe == "list":
+		return Daftar(data)
+	else:
+		return Nil()
+
 class BuiltInFungsi(BaseFungsi):
 	def __init__(self, nama):
 		super().__init__(nama)
@@ -1932,7 +1966,7 @@ class BuiltInFungsi(BaseFungsi):
 	esekusi_print.nama_parameter = ["isi"]
 
 	def esekusi_tunggu(self, konteks_esekusi):
-		detik = repr(konteks_esekusi.TabelSimbol.dapat("waitsecond") or 0.1)
+		detik = konteks_esekusi.TabelSimbol.dapat("waitsecond").nilai or 0.1
 		time.sleep(float(detik))
 		return HasilRuntime().berhasil(Angka.nil)
 		# lokal e = 0; saat e < 50 maka tulis(e + 1); tunggu(1); lokal e = e + 1 tutup
@@ -1941,6 +1975,32 @@ class BuiltInFungsi(BaseFungsi):
 	def esekusi_tipe(self, konteks_esekusi):
 		return HasilRuntime().berhasil(String(type(konteks_esekusi.TabelSimbol.dapat("data") or Nil()).__name__.lower()))
 	esekusi_tipe.nama_parameter = ["data"]
+
+	def esekusi_substring(self, konteks_esekusi):
+		stringg = konteks_esekusi.TabelSimbol.dapat("str")
+		awal = konteks_esekusi.TabelSimbol.dapat("awal")
+		akhir = konteks_esekusi.TabelSimbol.dapat("akhir")
+		if not isinstance(stringg, String):
+			return HasilRuntime().gagal(RTError(
+				self.posisi_awal, self.posisi_akhir,
+				"Parameter pertama harus berupa String",
+			 	konteks_esekusi
+	  		))
+		if not isinstance(awal, Angka):
+			return HasilRuntime().gagal(RTError(
+				self.posisi_awal, self.posisi_akhir,
+				"Parameter kedua harus berupa Angka",
+			 	konteks_esekusi
+	  		))
+		if not isinstance(akhir, (Angka, Nil)):
+			return HasilRuntime().gagal(RTError(
+				self.posisi_awal, self.posisi_akhir,
+				"Parameter ketiga harus berupa Angka",
+			 	konteks_esekusi
+	  		))
+		
+		return HasilRuntime().berhasil(String(stringg.nilai[awal.nilai:(isinstance(akhir, Angka) and akhir.nilai or len(stringg.nilai))]))
+	esekusi_substring.nama_parameter = ["str", "awal", "akhir"]
 
 	def esekusi_panjang(self, konteks_esekusi):
 		dataparam = konteks_esekusi.TabelSimbol.dapat("strlistdata") or Nil()
@@ -2011,6 +2071,7 @@ BuiltInFungsi.wait = BuiltInFungsi("tunggu")
 BuiltInFungsi.tipe = BuiltInFungsi("tipe")
 BuiltInFungsi.panjang = BuiltInFungsi("panjang")
 BuiltInFungsi.masuk = BuiltInFungsi("masukkan")
+BuiltInFungsi.substring = BuiltInFungsi("substring")
 BuiltInFungsi.esekusi_builtin = BuiltInFungsi("jalankan")
 
 # Konteks
@@ -2338,6 +2399,7 @@ global_tabel_simbol.tulis("tunggu", BuiltInFungsi.wait)
 global_tabel_simbol.tulis("tipe", BuiltInFungsi.tipe)
 global_tabel_simbol.tulis("panjang", BuiltInFungsi.panjang)
 global_tabel_simbol.tulis("masuk", BuiltInFungsi.masuk)
+global_tabel_simbol.tulis("substring", BuiltInFungsi.substring)
 global_tabel_simbol.tulis("esekusi", BuiltInFungsi.esekusi_builtin)
 
 def esekusi(namafile, teks):
