@@ -69,8 +69,9 @@ tulis("program selesai")
 ## Built-in fungsi  
 - tulis(semua)  -> menulis ke stdout  
 - panjang(string|array)  -> menghitung panjang data  
-- tunggu(angka)  -> menghentikan sementara thread selama waktu yang ditentukan (detik)  
+- tunggu(angka?)  -> menghentikan sementara thread selama waktu yang ditentukan (detik)  
 - tipe(semua)  -> mendapatkan nama tipe data  
+- substring(string, angkaAwal, angkaAkhir?)  -> memangkas string dari start ke akhir  
 - masukkan(array, semua)  -> memasukkan isi kedalam array (indeks terakhir)  
 - jalankan(lokasi_file)  -> mengesekusi file yang sudah ditentukan  
 ## Built-in keyword  
