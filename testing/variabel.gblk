@@ -10,4 +10,9 @@ fungsi menggokil(wee)
     kembali wee
 tutup
 
+-- pengganti ternary operator
+tulis(1 + 1 == 2 dan "benar 2" atau "bukan 2")
+tulis(nil atau "nihil")
+
+tulis(substring("abc", 2)) 
 tulis(menggokil("ha "))
