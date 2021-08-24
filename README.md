@@ -62,7 +62,7 @@ tutup
 tulis("program selesai")
 ```   
 ## Tipe data  
-- Angka  -> tipe data number, angka 1-9
+- Angka  -> tipe data number, angka 0-9
 - String  -> tipe data string
 - Boolean  -> tipe data boolean (benar|salah)  
 - Array  -> tipe data array, ["indeks0", 1]
@@ -78,3 +78,6 @@ tulis("program selesai")
 - jika `<kondisi>` maka `<ekspr>` tutup  -> ekuivalen dengan if statement  
 - saat `<kondisi>` maka `<ekspr>` tutup  -> ekuivalen dengan loop while statement  
 - untuk `<nama variabel>` = `<angka awal>` ke `<angka tujuan>` langkah `<koefisien>` maka `<ekspr>` tutup  -> ekuivalen dengan loop for statement  
+
+**Project migrated to node.js, please refer to**  
+> https://github.com/Fastering18/node-gblok
